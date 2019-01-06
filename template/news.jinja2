@@ -1,0 +1,4 @@
+{{ build_date }}までの主なニュースです。
+
+{% for item in items %}<{{ item["link"] }}|{{ item["title"] }}> ({{ item["pub_date"] }})
+{% endfor %}
